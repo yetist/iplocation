@@ -1,0 +1,12 @@
+<node>
+	<interface name="org.moses.IpLocation">
+		<method name="GetLocation">
+			<arg name="ip" type="s" direction="in"/>
+			<arg name="location" type="s" direction="out"/>
+		</method>
+		<method name="GetLocationByInt">
+			<arg name="ip" type="u" direction="in"/>
+			<arg name="location" type="s" direction="out"/>
+		</method>
+	</interface>
+</node>
