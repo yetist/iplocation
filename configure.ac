@@ -24,9 +24,8 @@ AC_TYPE_UINT32_T
 AC_TYPE_UINT8_T
 
 # Checks for library functions.
-
-AC_CONFIG_MACRO_DIR([m4])
-LT_INIT
+#AC_CONFIG_MACRO_DIR([m4])
+#LT_INIT
 
 GIO_REQUIRED=2.35.0
 
