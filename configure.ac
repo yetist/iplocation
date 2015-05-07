@@ -4,7 +4,7 @@
 AC_PREREQ([2.69])
 AC_INIT(moses-iplocation, 0.0.2, http://bugs.isoft-linux.org)
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz tar-ustar])
-AC_CONFIG_SRCDIR([src/main.c])
+AC_CONFIG_SRCDIR([src/iplocation.c])
 AC_CONFIG_HEADERS([config.h])
 
 AM_MAINTAINER_MODE([enable])
