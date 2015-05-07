@@ -44,3 +44,5 @@ EXTRA_DIST = 			\
 	qqwry.h	\
 	org.moses.IpLocation.xml	\
 	$(NULL)
+
+-include $(top_srcdir)/git.mk
