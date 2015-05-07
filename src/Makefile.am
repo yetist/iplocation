@@ -1,5 +1,5 @@
 NULL =
-bin_PROGRAMS = iplocationd
+bin_PROGRAMS = iplocationd iplocation
 
 common_CFLAGS = 	\
 	-Wall		\
@@ -15,7 +15,17 @@ iplocationd_LDADD =	\
 iplocationd_SOURCES =	\
 	$(location_built_sources)	\
 	qqwry.c	\
-	main.c	\
+	iplocationd.c	\
+	$(NULL)
+
+iplocation_CFLAGS =	\
+	$(GIO_CFLAGS)
+
+iplocation_LDADD =	\
+	$(GIO_LIBS) 
+
+iplocation_SOURCES =	\
+	iplocation.c	\
 	$(NULL)
 
 location_built_sources =	\
@@ -31,4 +41,6 @@ $(location_built_sources) : Makefile.am $(srcdir)/org.moses.IpLocation.xml
 		$(srcdir)/org.moses.IpLocation.xml
 
 EXTRA_DIST = 			\
+	qqwry.h	\
+	org.moses.IpLocation.xml	\
 	$(NULL)

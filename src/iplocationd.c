@@ -20,15 +20,17 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  * */
 
+#ifdef HAVE_CONFIG_H
+#  include <config.h>
+#endif
 #include <stdio.h>
 #include <string.h>
-//#include "config.h"
 
 #include <gio/gio.h>
 #include "moses-ip-location-generated.h"
 #include "qqwry.h"
 
-#define MOSES_DBUS_NAME "org.moses.iplocation"
+#define MOSES_DBUS_NAME "org.moses.IpLocation"
 #define MOSES_DBUS_PATH "/org/moses/IpLocation"
 
 static void on_name_acquired (GDBusConnection *connection, const gchar *name, gpointer user_data)
